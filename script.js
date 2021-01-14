@@ -3,4 +3,10 @@
 let player = $('.player__video').first();
 let progress = $('.progress__filled').first();
 
-// console.log(player);
+let play = $('.toggle');
+let nav = $('.player__button');
+
+play.click(function (event) {
+    player.get(0).play();
+})
+
