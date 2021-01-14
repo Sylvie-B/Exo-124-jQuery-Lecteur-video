@@ -17,3 +17,11 @@ play.click(function () {
     }
 })
 
+let i = 0;
+player.get(0).addEventListener('timeupdate', function (){
+
+    progress.css('width', i * player.width() / 2387);
+    i++;
+
+})
+
